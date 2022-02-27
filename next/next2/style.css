@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  bantalan: 0;
+  ukuran kotak: kotak perbatasan;
+  font-family: 'Poppins', sans-serif;
+}
+tubuh{
+  tampilan: fleksibel;
+  align-item: tengah;
+  justify-content: pusat;
+  min-tinggi: 100vh;
+  bantalan: 20 piksel;
+  latar belakang: #647df9;
+}
+.pembungkus{
+  lebar maks: 1090 piksel;
+  lebar: 100%;
+  margin: otomatis;
+  tampilan: fleksibel;
+  bungkus fleksibel: bungkus;
+  justify-content: ruang-antara;
+}
+.bungkus .tabel{
+  latar belakang: #fff;
+  lebar: calc(33% - 20px);
+  bantalan: 30px 30px;
+  posisi: relatif;
+  bayangan kotak: 0 5px 10px rgba(0,0,0,0.1);
+}
+.tabel .harga-bagian{
+  tampilan: fleksibel;
+  justify-content: pusat;
+}
+.tabel .price-area{
+  tinggi: 120 piksel;
+  lebar: 120 piksel;
+  batas-radius: 50%;
+  bantalan: 2 piksel;
+}
+.price-area .inner-area{
+  tinggi: 100%;
+  lebar: 100%;
+  batas-radius: 50%;
+  perbatasan: 3px solid #fff;
+  tinggi garis: 117px;
+  perataan teks: tengah;
+  warna: #ff;
+  posisi: relatif;
+}
+.price-area .inner-area .text{
+  ukuran font: 25px;
+  font-berat: 400;
+  posisi: mutlak;
+  atas: -10 piksel;
+  kiri: 17 piksel;
+}
+.price-area .inner-area .price{
+  ukuran font: 45px;
+  font-berat: 500;
+  margin-kiri: 16px;
+}
+.tabel .nama-paket{
+  lebar: 100%;
+  tinggi: 2 piksel;
+  margin: 35px 0;
+  posisi: relatif;
+}
+.tabel .nama-paket::sebelum{
+  posisi: mutlak;
+  atas: 50%;
+  kiri: 50%;
+  ukuran font: 25px;
+  font-berat: 500;
+  latar belakang: #fff;
+  bantalan: 0 15px;
+  mengubah: menerjemahkan(-50%, -50%);
+}
+.tabel .fitur li{
+  margin-bawah: 15px;
+  gaya daftar: tidak ada;
+  tampilan: fleksibel;
+  justify-content: ruang-antara;
+}
+.fitur li .daftar-nama{
+  ukuran font: 17px;
+  font-berat: 400;
+}
+.fitur li .icon{
+  ukuran font: 15px;
+}
+.fitur li .icon.check{
+  warna: #2db94d;
+}
+.fitur li .icon.cross{
+  warna: #cd3241;
+}
+.tabel .btn{
+  lebar: 100%;
+  tampilan: fleksibel;
+  margin-atas: 35px;
+  justify-content: pusat;
+}
+.tabel .tombol btn{
+  lebar: 80%;
+  tinggi: 50 piksel;
+  warna: #ff;
+  ukuran font: 20px;
+  font-berat: 500;
+  perbatasan: tidak ada;
+  garis besar: tidak ada;
+  batas-radius: 25px;
+  kursor: penunjuk;
+transisi: semua 0,3 detik mudah;
+}
+.tabel .btn tombol: arahkan kursor{
+  batas-radius: 5px;
+}
+.basic .features li::pilihan{
+  latar belakang: #ffd861;
+}
+.basic ::pilihan,
+.basic .price-area,
+.dasar .area-dalam{
+  latar belakang: #ffd861;
+}
+.tombol .btn dasar{
+  batas: 2px solid #ffd861;
+  latar belakang: #fff;
+  warna: #ffd861;
+}
+tombol .basic .btn: arahkan kursor{
+  latar belakang: #ffd861;
+  warna: #ff;
+}
+.premium ::pilihan,
+.premium .price-area,
+.premium .area dalam,
+tombol .premium .btn{
+  latar belakang: #a26bfa;
+}
+.premium .btn tombol:arahkan{
+  latar belakang: #833af8;
+}
+.ultimate ::pilihan,
+.ultimate .price-area,
+.ultimate .area-dalam{
+  latar belakang: #43ef8b;
+}
+tombol .ultimate .btn{
+  perbatasan: 2px solid #43ef8b;
+  warna: #43ef8b;
+  latar belakang: #fff;
+}
+.ultimate .btn button:hover{
+  latar belakang: #43ef8b;
+  warna: #ff;
+}
+.dasar .nama-paket{
+  latar belakang: #ffecb3;
+}
+.premium .nama-paket{
+  latar belakang: #d0b3ff;
+}
+.ultimate .package-name{
+  latar belakang: #baf8d4;
+}
+.basic .package-name::before{
+konten: "Dasar";
+}
+.premium .paket-nama::sebelum{
+isi: "DIRI SENDIRI";
+  ukuran font: 24px;
+}
+.ultimate .package-name::before{
+  konten: "Utama";
+  ukuran font: 24px;
+}
+@media (lebar maks: 1020 piksel) {
+  .bungkus .tabel{
+    lebar: calc(50% - 20px);
+    margin-bawah: 40px;
+  }
+}
+@media (lebar maks: 698 piksel) {
+  .bungkus .tabel{
+    lebar: 100%;
+  }
+}
+::pilihan{
+  warna: #ff;
+}
+.tabel .pita{
+  lebar: 150 piksel;
+  tinggi: 150 piksel;
+  posisi: mutlak;
+  atas: -10 piksel;
+  kiri: -10 piksel;
+  melimpah: tersembunyi;
+}
+.tabel .ribbon::sebelum,
+.tabel .ribbon::setelah{
+  posisi: mutlak;
+  isi: "";
+  indeks-z: -1;
+  tampilan: blok;
+  perbatasan: 7px solid #4606ac;
+  border-top-color: transparan;
+  perbatasan-kiri-warna: transparan;
+}
+.tabel .ribbon::sebelum{
+  atas: 0 piksel;
+  kanan: 15 piksel;
+}
+.tabel .ribbon::setelah{
+  bawah: 15 piksel;
+  kiri: 0 piksel;
+}
+.tabel .rentang pita{
+  posisi: mutlak;
+  atas: 30 piksel;
+  kanan: 0;
+  mengubah: memutar (-45deg);
+  lebar: 200 piksel;
+  latar belakang: #a26bfa;
+  bantalan: 10 piksel 0;
+  warna: #ff;
+  perataan teks: tengah;
+  ukuran font: 17px;
+  transformasi teks: huruf besar;
+  kotak-bayangan: 0 5px 10px rgba(0,0,0,0.12);
+}
